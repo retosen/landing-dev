@@ -1,0 +1,162 @@
+@charset "UTF-8";
+/* media queries*/
+
+@media screen and (min-width: 730px) {
+  .navOverlay {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .downloadsWrapper {
+    .downloadBtn {
+      margin: 8pt;
+    }
+  }
+  .footerIcon {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .downloadsWrapper {
+    .section {
+      padding: 24pt 16pt;
+    }
+  }
+}
+
+@media screen and (max-width: 885px) {
+  .mainFooter {
+    flex-direction: column;
+    padding: 16pt;
+    .emailSignup {
+      margin-bottom: 16pt;
+    }
+  }
+  .container {
+    padding: 16pt 8pt;
+  }
+  .copyright {
+    text-align: center;
+    span {
+      display: block;
+      float: none;
+    }
+  }
+}
+
+@media screen and (max-width: 790px) {
+  .nav {
+    .navBtn {
+      padding: 0 8pt;
+      font-size: $tS;
+    }
+  }
+  .downloadsWrapper {
+    .downloadBtn {
+      margin-bottom: 4pt;
+      padding: 4pt;
+      svg {
+        width: 16pt;
+      }
+      span {
+        font-size: $tM;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  $mobileNavHeight: 8vh;
+  #alert {
+    top: 0;
+  }
+  [class$='Wrapper'] {
+    padding-top: $nav-height;
+  }
+  .mainWrapper {
+    padding-top: 0;
+  }
+  .mainBanner {
+    height: calc(100vh - #{$mobileNavHeight});
+    padding-top: 0;
+    h1 {
+      font-size: 18pt;
+    }
+  }
+  .section {
+    padding: 24pt 16pt;
+  }
+  .downloadsWrapper {
+    .downloadBtn {
+      width: 100%;
+    }
+  }
+  .nav {
+    bottom: 0;
+    padding: 0;
+    height: $mobileNavHeight;
+    .navLogo, .navBtn {
+      display: none;
+    }
+    .navLogoMobile, .navBtnMobile {
+      display: flex;
+    }
+  }
+  .footer {
+    margin-bottom: $mobileNavHeight;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .nav {
+    .navLogoContainer {
+      display: none;
+    }
+  }
+  #alert {
+    font-size: $tS;
+  }
+  .mainBanner {
+    .moreInfo {
+      bottom: 16pt;
+    }
+  }
+  .onboardingWrapper {
+    .container {
+      a, .viewAll {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
+  .downloadBtn {
+    margin: 8pt;
+    padding: 8pt 2pt;
+    font-size: 1.8vw;
+    svg {
+      //display: none;
+    }
+    span {
+      //margin: 0;
+    }
+  }
+  .features {
+    .featureBox {
+      width: calc(100vw - 16pt);
+    }
+  }
+  .mainFooter {
+    #colWrapper {
+      flex-flow: column nowrap;
+      text-align: center;
+      .col {
+        width: auto;
+        margin: 0 auto 4pt;
+        padding-bottom: 4pt;
+        border-bottom: 1px solid $bg;
+      }
+    }
+  }
+}

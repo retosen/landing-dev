@@ -1,0 +1,112 @@
+.nav {
+  position: fixed;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: $nav-height;
+  width: 100%;
+  padding: 0 16pt;
+  font-size: $tS;
+  color: $text-color;
+  background-color: $bg;
+  box-shadow: 0 0 5px -1px $mid-grey;
+  transition: all .75s ease;
+  z-index: 100;
+  & > * {
+    line-height: 1;
+  }
+  .navBtn {
+    display: inline-block;
+    line-height: $nav-height;
+    padding: 0 16pt;
+    font-size: 1.2em;
+    cursor: pointer;
+    color: inherit;
+    transition: all .15s ease;
+    &:hover {
+      color: $bg;
+      background-color: $accent-color-purple;
+    }
+  }
+  .navLogo {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin-right: auto;
+    img {
+      height: 20pt;
+    }
+    span {
+      font-size: 2em;
+      margin-left: 0.25em;
+      font-weight: bold;
+    }
+  }
+  .navLogoMobile {
+    @extend .navLogo;
+    display: none;
+    justify-content: center;
+    flex-basis: 25%;
+    margin-right: 0;
+    img, svg {
+      width: 4vh;
+      height: 4vh;
+      fill: $accent-color-purple;
+    }
+  }
+  .hamburger {
+    display: none;
+    z-index: 100;
+    svg {
+      fill: $text-color;
+    }
+  }
+  .navBtnMobile {
+    display: none;
+    flex-basis: 25%;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    border-left: 1px solid $darker-light-grey;
+    img, svg {
+      width: 4vh;
+      height: 4vh;
+      fill: $accent-color-yellow;
+    }
+    .fa-download {
+      fill: $accent-color-blue;
+    }
+  }
+}
+
+.navOverlay {
+  position: fixed;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: calc(100vh - #{$nav-height});
+  margin-top: $nav-height;
+  font-size: 10vh;
+  color: $bg;
+  font-weight: bold;
+  background: rgba($accent-color-purple, 0.75);
+  z-index: 99;
+  overflow: auto;
+  a {
+    margin: 0.25em 0;
+    transition: all .2s ease;
+    &:hover {
+      text-shadow: 2px 2px $accent-color-pink;
+    }
+  }
+}
+
+.overlay {
+  transform: translateZ(2px);
+  z-index: 3;
+  overflow: hidden;
+}

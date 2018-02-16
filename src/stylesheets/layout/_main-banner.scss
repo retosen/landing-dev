@@ -1,0 +1,72 @@
+.mainBanner {
+  position: relative;
+  height: 100vh;
+  min-height: 400pt;
+  padding-top: $nav-height;
+  background: $home-gradient;
+  background-size: 400% 400%;
+  animation: animate-gradient 5s infinite;
+  div {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 600pt;
+    max-width: calc(100vw - 16pt);
+    height: 100%;
+    margin: 0 auto;
+    padding: 8pt;
+  }
+  #logoBanner {
+    display: block;
+    height: 120pt;
+    margin: 8pt 0;
+    &.animate {
+      animation: spin 1s linear infinite, moveLeftToRight 2.5s linear infinite;
+    }
+    @keyframes spin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    @keyframes moveLeftToRight {
+      0%   { margin-left: -20%; }
+      100% { margin-left: 100%; }
+    }
+  }
+  h1 {
+    width: 100%;
+    max-width: 90vw;
+    text-align: center;
+    color: $bg;
+    font-size: 1.8em;
+  }
+  a {
+    display: block;
+    width: 140pt;
+    line-height: 1;
+    margin: 8pt auto;
+    padding: 8pt 16pt;
+    text-align: center;
+    font-weight: bold;
+    color: $bg;
+    background: $accent-color-purple;
+    border: 1px solid $bg;
+    white-space: nowrap;
+    transition: all .15s ease-in-out;
+    &:hover {
+      background: $bg;
+      color: $accent-color-purple;
+    }
+  }
+  .moreInfo {
+    position: absolute;
+    left: 50%;
+    bottom: 8pt;
+    transform: translateX(-50%);
+    color: $bg;
+    pointer-events: none;
+    svg {
+      fill: $bg
+    }
+  }
+}

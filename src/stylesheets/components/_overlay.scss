@@ -1,0 +1,17 @@
+.overlay {
+  overflow-y: hidden;
+  pointer-events: none;
+}
+
+.overlayMessage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  padding: 16pt;
+  min-height: 320pt;
+  color: black;
+  text-align: center;
+  font-size: 6vw;
+}

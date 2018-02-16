@@ -1,0 +1,31 @@
+/* _-_-_- base/BASE -_-_-_ */
+body {
+  background: $bg;
+  color: $text-color;
+  font-family: $text-font-stack;
+  line-height: 1.4;
+}
+
+a {
+  color: $accent-color-purple;
+  cursor: pointer;
+}
+
+* {
+  a {
+    color: inherit;
+  }
+}
+
+svg {
+  fill: white;
+  path {
+    fill: inherit;
+  }
+}
+
+.clearfix {
+  overflow: auto;
+  zoom: 1;
+}
+

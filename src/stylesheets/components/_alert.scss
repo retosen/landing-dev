@@ -1,0 +1,39 @@
+#alert {
+  position: fixed;
+  left: 0;
+  top: $nav-height + 1;
+  width: 100vw;
+  margin: 0 auto;
+  text-align: center;
+  font-size: $tM;
+  font-weight: bold;
+  background: $accent-color-blue;
+  color: $bg;
+  z-index: 97;
+  a {
+    display: inline-block;
+    width: calc(100% - 80pt);
+    margin: 0.5em auto;
+    color: $bg;
+  }
+  svg {
+    position: absolute;
+    right: 16pt;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  &.long {
+    font-size: 1em;
+  }
+  &.warning {
+    background: red;
+  }
+  &.link {
+    background: $accent-color-yellow;
+  }
+}
+
+.closeAlert {
+
+}

@@ -1,0 +1,102 @@
+.footer{
+  width: 100%;
+}
+
+.mainFooter {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 24pt 8pt;
+  background: $home-gradient;
+  color: $bg;
+}
+.footerIcon {
+  height: 64pt;
+  fill: $bg;
+  transition: opacity .25s ease;
+  &:hover {
+    opacity: 0.75;
+  }
+}
+.emailSignup{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400pt;
+  max-width: 100vw;
+  .emailOverlay {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: $tL;
+  }
+  input, button {
+    opacity: 0.25;
+    pointer-events: none;
+  }
+  input[type=email] {
+    padding: 0.5em 0;
+    border-radius:0 5px;
+    border: 2px solid $bg;
+    background-color:transparent;
+    transition: border-color .2s linear;
+    text-align: center;
+    width: 240pt;
+    color: $bg;
+    font-size: 1.2em;
+    &:focus {
+      border-color: $bg;
+      outline-width: 0;
+      transition: border-color .2s linear;
+    }
+    &::placeholder {
+      color: $bg;
+    }
+  }
+  button {
+    width: 240pt;
+    padding: 8pt 16pt;
+    background-color: $bg;
+    margin-top: 8pt;
+    font-size: 18px;
+    font-weight: bold;
+    color: $accent-color-purple;
+    border-radius: 0 5px;
+  }
+}
+#colWrapper{
+  display:flex;
+  justify-content: center;
+  width: 400pt;
+  max-width: 100vw;
+  color:$bg;
+  .col{
+    display:flex;
+    flex-direction: column;
+    margin: 0 1em 0;
+    li {
+      &:first-of-type {
+        font-size: $tL;
+        font-weight: bold;
+        color: $darker-light-grey;
+      }
+      &:not(:first-of-type) {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.copyright {
+  padding: 8pt;
+  font-size: $tS;
+  color: $accent-color-purple;
+  background: $bg;
+  span {
+    float: right;
+  }
+}

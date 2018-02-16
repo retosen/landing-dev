@@ -1,0 +1,51 @@
+#featureBoxContainer {
+  display:flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin-top: 16pt;
+}
+.featureBox {
+  width: 240pt;
+  margin: 8pt;
+  background-color: $bg;
+  transition: 0.2s linear;
+  @for $i from 1 through 4 {
+    &:nth-of-type(#{$i}) {
+      .center {
+        background-color: rgb(112 + ($i * 20), 76, 104);
+      }
+    }
+  }
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80pt;
+    margin-bottom: 0.5em;
+    padding: 4pt 0;
+    svg {
+      width: auto;
+      height: 24pt;
+      path {
+        fill: $bg;
+      }
+    }
+  }
+  .desc {
+    padding: 1em;
+  }
+  h2 {
+    margin-bottom: 0.25em;
+    font-weight: bold;
+    font-size: $tL;
+    //text-align: center;
+  }
+  p {
+    color: $darker-mid-grey;
+  }
+  a {
+    color: $accent-color-purple;
+    font-weight: bold;
+  }
+}

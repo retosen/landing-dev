@@ -1,0 +1,10 @@
+.container {
+  padding: 16pt;
+  .header {
+    display: block;
+    font-size: 1.6em;
+    text-align: left;
+    margin-bottom: 1em;
+    border-bottom: 1px solid $mid-grey;
+  }
+}

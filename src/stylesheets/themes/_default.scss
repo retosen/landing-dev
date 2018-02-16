@@ -1,0 +1,38 @@
+.home {
+  @include theme($accent-color-purple, $accent-color-pink, $home-gradient, 2);
+}
+
+.onboarding {
+  @include theme($accent-color-yellow, $accent-color-orange, $resource-gradient, 3);
+}
+
+.downloads {
+  @include theme($accent-color-blue, $accent-color-lavender, $download-gradient, 4);
+}
+
+a[href^="/onboarding"] {
+  color: $accent-color-yellow;
+}
+a[href^="/downloads"] {
+  color: $accent-color-blue;
+}
+a[href="/"] {
+  color: $accent-color-purple;
+}
+
+.mainBanner {
+  a {
+    color: $bg;
+  }
+}
+
+.footer {
+  a {
+    color: $bg;
+  }
+  .copyright {
+    a {
+      color: $accent-color-purple;
+    }
+  }
+}

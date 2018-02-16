@@ -1,0 +1,15 @@
+#notfound {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  padding: 16pt;
+  h1 {
+    font-size: 3em;
+  }
+  a {
+    font-size: 2em;
+    color: $accent-color-purple;
+  }
+}

@@ -1,0 +1,74 @@
+.description {
+  text-align: center;
+  p {
+    width: 656pt;
+    max-width: 80vw;
+    margin: 1em auto;
+    text-align: left;
+    text-indent: 1em;
+    color: #333333;
+    font-size:18px;
+    &::first-letter {
+      font-size:26px;
+      font-weight: bolder;
+      max-width: 800px;
+    }
+  }
+}
+
+.progress {
+  .progressLinks {
+    display: flex;
+    justify-content: center;
+    margin: 16pt 0;
+    iframe {
+      flex-basis: 40%;
+      height: 240pt;
+    }
+    a {
+      flex-basis: 40%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      max-width: 400pt;
+      height: 80pt;
+      margin: 0 16pt;
+      box-shadow: 4px 4px 8px rgba($text-color, 0.2);
+      svg {
+        width: 40pt;
+        height: 40pt;
+        fill: $bg;
+      }
+    }
+    .discordLink {
+      background: #738AD7;
+    }
+    .redditLink {
+      background: #FC461E;
+    }
+    .discordPlaceholder {
+      .discordIframe {
+        display: none;
+      }
+    }
+    .iframeReddit {
+      border: none;
+      position: relative;
+      visibility: visible;
+      display: block;
+      margin: 0;
+      padding: 0;
+      max-width: 100%;
+      min-width: 200px;
+    }
+  }
+}
+
+.mainResources {
+  padding: 16pt 8pt;
+  h2 {
+    font-weight: normal;
+    font-style: italic;
+    text-align: center;
+  }
+}

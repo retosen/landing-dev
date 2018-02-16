@@ -1,0 +1,50 @@
+.onboardingWrapper {
+  .section {
+    &:first-of-type {
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+      padding-top: 40pt;
+      h2 {
+        width: 520pt;
+        max-width: calc(100% - 16pt);
+        margin: 0 auto;
+        text-align: left;
+      }
+      img {
+        display: inline-block;
+        width: 80pt;
+        height: 80pt;
+        margin: 16pt 0;
+      }
+    }
+    &:nth-of-type(2) {
+      .subTitle {
+        margin-bottom: 16pt;
+      }
+    }
+  }
+  .container {
+    a {
+      display: inline-block;
+      margin: 0 8pt 8pt 0;
+      padding: 8pt 24pt;
+      line-height: 1;
+      font-weight: bold;
+      border: 2px solid $accent-color-yellow;
+      transition: all .15s ease;
+      &:hover {
+        color: $bg;
+        background: $accent-color-yellow;
+      }
+    }
+    .viewAll {
+      display: block;
+      width: 120pt;
+      padding: 8pt;
+      text-align: center;
+      color: $bg;
+      background: $accent-color-yellow;
+    }
+  }
+}
