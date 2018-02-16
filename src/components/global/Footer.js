@@ -19,7 +19,7 @@ export default () => (
             <a href="https://explorer.garlicoin.io">Explorer</a>
           </li>
           <li>
-            <Link to="/resources">Garlic Recipes</Link>
+            <a href="https://pandawanfr.github.io/GarlicRecipes/">Garlic Recipes</a>
           </li>
         </ul>
         <ul className="col">
@@ -37,7 +37,7 @@ export default () => (
         </ul>
         <ul className="col">
           <li>Help</li>
-          <li><Link to="resources">Resources</Link></li>
+          <li><Link to="/onboarding">Resources</Link></li>
           <li>
             <a href="mailto:garlicoindevs@gmail.com">
               garlicoindevs@gmail.com
