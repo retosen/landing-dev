@@ -10,14 +10,14 @@
   @include theme($accent-color-blue, $accent-color-lavender, $download-gradient, 4);
 }
 
-a[href^="/onboarding"] {
-  color: $accent-color-yellow;
+.routeLink[href="/onboarding"] {
+  @include route-link($accent-color-yellow);
 }
-a[href^="/downloads"] {
-  color: $accent-color-blue;
+.routeLink[href="/downloads"] {
+  @include route-link($accent-color-blue);
 }
-a[href="/"] {
-  color: $accent-color-purple;
+.routeLink[href="/"] {
+  @include route-link($accent-color-purple);
 }
 
 .mainBanner {

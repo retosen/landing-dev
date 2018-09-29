@@ -1,0 +1,46 @@
+.alert {
+  position: sticky;
+  top: $nav-height;
+  width: 100%;
+  padding: 8pt;
+  text-align: center;
+  font-size: $tM;
+  font-weight: bold;
+  background: $accent-color-blue;
+  color: $bg;
+  z-index: 97;
+  a {
+    margin: 0 auto;
+    color: $bg;
+  }
+  &.long {
+    font-size: 1em;
+  }
+  &.warning {
+    background: red;
+  }
+  &.link {
+    background: $accent-color-yellow;
+  }
+}
+
+.closeAlert {
+  position: absolute;
+  right: 16pt;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  color: $bg;
+  background: transparent;
+  cursor: pointer;
+  z-index: 98;
+  .icon {
+    width: 12pt;
+    height: 12pt;
+    pointer-events: none;
+  }
+}

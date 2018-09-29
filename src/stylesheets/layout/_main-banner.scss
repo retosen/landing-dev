@@ -1,23 +1,16 @@
 .mainBanner {
   position: relative;
-  height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - (#{$nav-height} * 2));
   min-height: 400pt;
   padding-top: $nav-height;
   background: $home-gradient;
   background-size: 400% 400%;
   animation: animate-gradient 5s infinite;
-  div {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-    width: 600pt;
-    max-width: calc(100vw - 16pt);
-    height: 100%;
-    margin: 0 auto;
-    padding: 8pt;
-  }
-  #logoBanner {
+  .logoBanner {
     display: block;
     height: 120pt;
     margin: 8pt 0;
@@ -43,7 +36,6 @@
   a {
     display: block;
     width: 140pt;
-    line-height: 1;
     margin: 8pt auto;
     padding: 8pt 16pt;
     text-align: center;
@@ -60,8 +52,8 @@
   }
   .moreInfo {
     position: absolute;
-    left: 50%;
     bottom: 8pt;
+    left: 50%;
     transform: translateX(-50%);
     color: $bg;
     pointer-events: none;

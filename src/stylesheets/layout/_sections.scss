@@ -33,11 +33,11 @@
       max-width: 400pt;
       height: 80pt;
       margin: 0 16pt;
+      color: $bg;
       box-shadow: 4px 4px 8px rgba($text-color, 0.2);
-      svg {
+      .icon {
         width: 40pt;
         height: 40pt;
-        fill: $bg;
       }
     }
     .discordLink {

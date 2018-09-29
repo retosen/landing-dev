@@ -1,5 +1,6 @@
-.nav {
-  position: fixed;
+nav {
+  position: sticky;
+  top: 0;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -9,15 +10,12 @@
   font-size: $tS;
   color: $text-color;
   background-color: $bg;
-  box-shadow: 0 0 5px -1px $mid-grey;
-  transition: all .75s ease;
+  box-shadow: 0 0 4px rgba($text-color, 0.15);
   z-index: 100;
-  & > * {
-    line-height: 1;
-  }
   .navBtn {
-    display: inline-block;
-    line-height: $nav-height;
+    display: flex;
+    align-items: center;
+    height: 100%;
     padding: 0 16pt;
     font-size: 1.2em;
     cursor: pointer;
@@ -31,82 +29,47 @@
   .navLogo {
     display: flex;
     align-items: center;
-    height: 100%;
     margin-right: auto;
-    img {
-      height: 20pt;
+    color: $accent-color-yellow;
+    .logo {
+      height: 16pt;
+      fill: $accent-color-yellow;
     }
     span {
       font-size: 2em;
-      margin-left: 0.25em;
+      margin-left: 4pt;
       font-weight: bold;
     }
   }
-  .navLogoMobile {
-    @extend .navLogo;
-    display: none;
-    justify-content: center;
-    flex-basis: 25%;
-    margin-right: 0;
-    img, svg {
-      width: 4vh;
-      height: 4vh;
-      fill: $accent-color-purple;
-    }
-  }
-  .hamburger {
-    display: none;
-    z-index: 100;
-    svg {
-      fill: $text-color;
-    }
-  }
-  .navBtnMobile {
-    display: none;
-    flex-basis: 25%;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    border-left: 1px solid $darker-light-grey;
-    img, svg {
-      width: 4vh;
-      height: 4vh;
-      fill: $accent-color-yellow;
-    }
-    .fa-download {
-      fill: $accent-color-blue;
-    }
-  }
 }
 
-.navOverlay {
-  position: fixed;
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-  justify-content: center;
+.mobileNav {
+  position: sticky;
+  bottom: -1px;
   left: 0;
-  top: 0;
+  display: none;
   width: 100%;
-  height: calc(100vh - #{$nav-height});
-  margin-top: $nav-height;
-  font-size: 10vh;
-  color: $bg;
-  font-weight: bold;
-  background: rgba($accent-color-purple, 0.75);
-  z-index: 99;
-  overflow: auto;
-  a {
-    margin: 0.25em 0;
-    transition: all .2s ease;
-    &:hover {
-      text-shadow: 2px 2px $accent-color-pink;
-    }
-  }
+  height: $nav-height;
+  background: $bg;
+  box-shadow: 0 0 8px rgba($text-color, 0.1);
+  z-index: 10;
 }
 
-.overlay {
-  transform: translateZ(2px);
-  z-index: 3;
-  overflow: hidden;
+.navBtnMobile {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 8pt;
+  border-left: 1px solid $darker-light-grey;
+  &[href="/"] {
+    color: $accent-color-purple;
+  }
+  &[href="/onboarding"] {
+    color: $accent-color-yellow;
+  }
+  &[href="/downloads"] {
+    color: $accent-color-blue;
+  }
 }

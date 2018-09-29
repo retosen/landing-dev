@@ -1,7 +1,17 @@
 .downloadsWrapper {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  h2 {
+    margin-bottom: 16pt;
+  }
   .downloadsBtns {
-    display:flex;
-    flex-flow: row wrap;
-    justify-content: center;
+    display: grid;
+    column-gap: 16pt;
+    grid-row-gap: 16pt;
+    grid-template-columns: repeat(auto-fit, minmax(240pt, 1fr));
+    .icon {
+      color: $bg;
+    }
   }
 }

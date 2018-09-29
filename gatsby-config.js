@@ -1,17 +1,12 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Default Starter',
+    title: "garlicoin.io",
+
   },
   plugins: [
-    'gatsby-plugin-react-next',
-    'gatsby-plugin-react-helmet',
-    {
-      resolve: `gatsby-plugin-postcss-sass`,
-      options: {
-        postCssPlugins: [],
-        precision: 5, // SASS default: 5
-      },
-    }
+    `gatsby-plugin-root-import`,
+    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sass`
   ]
 };
 // pathPrefix: '/garlicoin-web-prod'
