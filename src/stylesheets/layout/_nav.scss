@@ -65,6 +65,7 @@ nav {
   align-items: center;
   height: 100%;
   padding: 8pt;
+  font-size: $tM;
   border-left: 1px solid $darker-light-grey;
   &[href="/"] {
     color: $accent-color-purple;
@@ -74,5 +75,8 @@ nav {
   }
   &[href="/downloads"] {
     color: $accent-color-blue;
+  }
+  .icon {
+    height: 90%;
   }
 }

@@ -1,21 +1,20 @@
 const services = {
   Wallets: {
-    "Garlium": "https://xske.github.io/garlium/",
     "Garlic Wallet": "https://garlicwallet.com",
-    "Android Waller": "https://play.google.com/store/apps/details?id=in.co.garli.garlicwallet"
+    "Android Wallet": "https://play.google.com/store/apps/details?id=in.co.garli.garlicwallet",
+    "Garlium": "https://github.com/garlicoin-project/garlium/releases/tag/v2.0.0"
   },
   Pools: {
-    "Cryptojoy": "https://cryptojoy.xyz/",
-    "Bakery": "https://grlc-bakery.fun/",
+    "Bakery": "https://grlc-bakery.org/",
     "GarlicSoup": "https://pool.garlicsoup.xyz/",
     "GarlicPool.org": "https://garlicpool.org/",
     "Happy Garlic Pool": "http://happy.garlicoin.fun/",
-    "HRY Mining Co.": "http://hry-mining.co/",
-    "Rich Garlic Boye": "http://rich.garlicboye.com/",
     "ButterPool": "http://butterpool.com/"
   },
   'Misc.': {
-
+    "Garlic Recipes (Guides and Resources)": "https://guide.garli.co.in/",
+    "Garlicoin Watchdog (Mining Pool Statistics)": "https://watchdog.garli.co.in/",
+    "Garlicoin Insights (Explorer)": "https://insight.garli.co.in/"
   }
 };
 

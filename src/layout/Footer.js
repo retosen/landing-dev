@@ -16,12 +16,12 @@ export default () => (
       </Link>
       <div className="footerCols">
         <ul className="col">
-          <li>Services</li>
+          <li>Resources</li>
           <li>
-            <a href="https://explorer.garlicoin.io">Explorer</a>
+            <a href="https://insight.garli.co.in/">Explorer</a>
           </li>
           <li>
-            <Link to="/resources">Garlic Recipes</Link>
+            <a href="/resources">Garlic Recipes</a>
           </li>
         </ul>
         <ul className="col">
@@ -40,7 +40,7 @@ export default () => (
         <ul className="col">
           <li>Help</li>
           <li>
-            <Link to="/onboarding">Resources</Link>
+            <Link to="/onboarding">Get Started</Link>
           </li>
           <li>
             <a href="mailto:garlicoindevs@gmail.com">

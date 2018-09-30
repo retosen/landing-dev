@@ -13,8 +13,8 @@ export default () => (
     <Link to="/" className="navBtn routeLink">Home</Link>
     <Link to="/onboarding" className="navBtn routeLink">Get Started</Link>
     <Link to="/downloads" className="navBtn routeLink">Downloads</Link>
-    <Link to="/resources" className="navBtn">
+    <a href="/resources" className="navBtn">
       <img src={recipes} alt="Garlic Recipes" />
-    </Link>
+    </a>
   </nav>
 );

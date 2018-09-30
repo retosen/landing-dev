@@ -15,8 +15,8 @@ export default () => (
     </Helmet>
     <h1 className="title">Get Started</h1>
     <div className="section">
-      <h2>We are proud to have Garlic Recipes as our official resource guide for Garlicoin. Click on the book or navigate to <Link to="/resources">garlicoin.io/resources</Link> to learn everything you need to know about this revolutionary new cryptocurrency.</h2>
-      <Link to="/resources"><img src={recipes} alt="Garlic Recipes" /></Link>
+      <h2>We are proud to have Garlic Recipes as our official resource guide for Garlicoin. Click on the book or navigate to <a href="/resources">garlicoin.io/resources</a> to learn everything you need to know about this revolutionary new cryptocurrency.</h2>
+      <a href="/resources"><img src={recipes} alt="Garlic Recipes" /></a>
       <h2>If you'd rather jump straight into the action, scroll down to our <a href="#services">Services section</a> or head over to the <Link to="/downloads" className="routeLink">Downloads page</Link>.</h2>
     </div>
     <div className="section" id="services">

@@ -8,11 +8,11 @@
     width: 200pt;
     padding: 1em;
     background: white;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba($text-color ,0.15);
     margin: 16pt 8pt;
-    transition: all .15s ease-in-out;
+    transition: all .3s ease-in-out;
     &:hover {
-      box-shadow: 0 4px 5px rgba(0,0,0,0.2);
+      box-shadow: 0 4px 6px rgba($text-color, 0.25);
     }
     h1 {
       font-size: $tL;

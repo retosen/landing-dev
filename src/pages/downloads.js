@@ -14,7 +14,7 @@ export default () => (
     </Helmet>
     <h1 className="title">Downloads</h1>
     <div className="section">
-      <h2>Not sure where to start? Jump over to our <Link to="onboarding" className="routeLink">Get Started section</Link> or head directly to <Link to="/resources">Garlic Recipes</Link>.</h2>
+      <h2>Not sure where to start? Jump over to our <Link to="onboarding" className="routeLink">Get Started section</Link> or head directly to <a href="/resources">Garlic Recipes</a>.</h2>
       <div className="downloadsBtns">
         {Object.keys(buttons).map(button => {
           const data = buttons[button];
