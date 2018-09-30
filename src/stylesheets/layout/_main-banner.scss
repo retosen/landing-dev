@@ -55,10 +55,14 @@
     bottom: 8pt;
     left: 50%;
     transform: translateX(-50%);
+    display: flex;
+    align-items: center;
     color: $bg;
     pointer-events: none;
-    svg {
-      fill: $bg
+    .icon {
+      width: 16pt;
+      height: 16pt;
+      margin-left: 4pt;
     }
   }
 }

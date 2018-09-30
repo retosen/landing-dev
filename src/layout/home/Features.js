@@ -15,7 +15,7 @@ export default () => (
         <p>Garlicoin trading speed is <span className="strike">near instant</span> pretty fast. Never be inconvienienced again with slow transaction speeds and high rates!</p>
       </FeatureBox>
       <FeatureBox icon={faCode} title="Open Source">
-        <p>Wanna take a closer look at Garlicoin? Do it! Just like the other "cool" cryptocurrencies, you'll be sure to find just what makes us tick on our <a href="https://github.com">GitHub.</a></p>
+        <p>Wanna take a closer look at Garlicoin? Do it! Just like the other "cool" cryptocurrencies, you'll be sure to find just what makes us tick on our <a href="https://github.com/GarlicoinOrg">GitHub.</a></p>
       </FeatureBox>
       <FeatureBox icon={faGem} title="Decentralized">
         <p>If you're like us, you hate fiat currencies; slow, paper, and prone to inflation. Decentralized (as in Garlicoin) currencies like Bitcoin and Ethereum have a limited amount on market. 69 million Garlicoin will only ever be available on market.</p>

@@ -10,7 +10,7 @@ import Resources from 'src/layout/home/Resources'
 export default class Home extends React.Component {
   render() {
     return (
-      <App name="mainWrapper">
+      <App wrapper="mainWrapper" page="home">
         <MainHeader />
         <Description />
         <Features />

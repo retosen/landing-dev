@@ -19,20 +19,6 @@
 .routeLink[href="/"] {
   @include route-link($accent-color-purple);
 }
-
-.mainBanner {
-  a {
-    color: $bg;
-  }
-}
-
-.footer {
-  a {
-    color: $bg;
-  }
-  .copyright {
-    a {
-      color: $accent-color-purple;
-    }
-  }
+[href="/resources"] {
+  color: $accent-color-orange;
 }

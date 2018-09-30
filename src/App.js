@@ -2,6 +2,7 @@ import React, { Fragment } from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
+import classNames from 'classnames'
 import Nav from 'src/layout/Nav'
 import MobileNav from 'src/layout/MobileNav'
 import Alert from 'src/layout/Alert'
@@ -19,7 +20,7 @@ export default class App extends React.Component {
   };
 
   render() {
-    const { name, children } = this.props;
+    const { wrapper, page, children } = this.props;
 
     return (
       <Fragment>
@@ -31,15 +32,15 @@ export default class App extends React.Component {
             { name: 'viewport', content: 'width=device-width, initial-scale=1.0' },
             { httpEquiv: 'Content-Security-Policy', content: "default-src 'self' ; script-src 'self' 'unsafe-inline' *.disqus.com a.disquscdn.com requirejs.org www.google-analytics.com; style-src 'self' 'unsafe-inline' a.disquscdn.com; img-src 'self' *; media-src 'self' ; frame-src disqus.com;" }]}
           link={[{ href: logo, rel: 'icon', type: 'image/x-icon' }]} />
-        <Fragment>
-          <Nav toggle={this.toggleOverlay} page={this.pageName} />
+        <div className={classNames('app', { [page]: !!page })}>
+          <Nav />
           <Alert />
-          <div className={name}>
+          <div className={wrapper}>
             { children }
           </div>
           <Footer />
           <MobileNav />
-        </Fragment>
+        </div>
       </Fragment>
     )
   }

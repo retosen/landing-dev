@@ -1,7 +1,7 @@
 .downloadsWrapper {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
+  .title {
+    margin-top: 40pt;
+  }
   h2 {
     margin-bottom: 16pt;
   }

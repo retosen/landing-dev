@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
-import Logo from '../components/svg/Logo'
+import Logo from 'src/components/svg/Logo'
 
 export default () => (
   <div className="footer">
@@ -14,14 +14,14 @@ export default () => (
       <Link to="/">
         <Logo name="footerIcon" />
       </Link>
-      <div id="colWrapper">
+      <div className="footerCols">
         <ul className="col">
           <li>Services</li>
           <li>
             <a href="https://explorer.garlicoin.io">Explorer</a>
           </li>
           <li>
-            <a href="https://pandawanfr.github.io/GarlicRecipes/">Garlic Recipes</a>
+            <Link to="/resources">Garlic Recipes</Link>
           </li>
         </ul>
         <ul className="col">

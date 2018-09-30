@@ -68,7 +68,8 @@
     border-radius: 0 5px;
   }
 }
-#colWrapper{
+
+.footerCols {
   display:flex;
   justify-content: center;
   width: 400pt;
@@ -78,14 +79,17 @@
     display:flex;
     flex-direction: column;
     margin: 0 1em 0;
+    a {
+      color: $bg;
+    }
     li {
+      color: $bg;
+      cursor: pointer;
       &:first-of-type {
         font-size: $tL;
         font-weight: bold;
         color: $darker-light-grey;
-      }
-      &:not(:first-of-type) {
-        cursor: pointer;
+        cursor: default;
       }
     }
   }
@@ -94,8 +98,11 @@
 .copyright {
   padding: 8pt;
   font-size: $tS;
-  color: $accent-color-purple;
+  color: $text-color;
   background: $bg;
+  a {
+    color: $accent-color-purple;
+  }
   span {
     float: right;
   }

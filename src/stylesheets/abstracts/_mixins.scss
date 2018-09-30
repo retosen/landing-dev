@@ -94,21 +94,7 @@
         font-weight: bold;
         border-bottom: 1px solid $accent1;
       }
-      &:hover {
-        background: $accent1;
-      }
     }
-  }
-  .navOverlay {
-    background: rgba($accent1, 0.75);
-    .navBtn {
-      &:hover {
-        text-shadow: 2px 2px $accent2;
-      }
-    }
-  }
-  a {
-    color: $accent1;
   }
   .mainFooter {
     background: $gradient;
